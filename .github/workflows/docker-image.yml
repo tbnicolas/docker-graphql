@@ -26,6 +26,16 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
         echo "Fin del login"
 
+    - name: Build docker image
+      run: |
+        docker build -t ntrujillo10/docker-graphql:0.0.2 .
+
+    - name: Push docker image
+      run: |
+        docker push ntrujillo10/docker-graphql:0.0.2
+
+    
+      
 
       
     # - name: Build the Docker image
