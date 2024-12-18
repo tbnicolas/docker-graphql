@@ -29,10 +29,12 @@ jobs:
     - name: Build docker image
       run: |
         docker build -t ntrujillo10/docker-graphql:0.0.2 .
+        docker build -t ntrujillo10/docker-graphql:latest .
 
     - name: Push docker image
       run: |
         docker push ntrujillo10/docker-graphql:0.0.2
+        docker push ntrujillo10/docker-graphql:latest
 
     
       
