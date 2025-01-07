@@ -52,7 +52,8 @@ jobs:
         docker push ntrujillo10/docker-graphql:${NEW_VERSION}
         docker push ntrujillo10/docker-graphql:latest
 
-    
+    - name: Where am i
+      run: pwd
 
     
       
